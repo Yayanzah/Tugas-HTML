@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menambahkan Video di HTML</title>
+  </head>
+  <body>
+    <h1>Contoh Menambahkan Video di HTML</h1>
+
+    <!-- Video sederhana dengan kontrol -->
+    <video src="video.mp4" width="400" controls></video>
+
+    <br /><br />
+
+    <!-- Video dengan beberapa atribut tambahan -->
+    <video width="400" controls autoplay muted loop poster="thumbnail.jpg">
+      <source src="video.mp4" type="video/mp4" />
+      <source src="video.webm" type="video/webm" />
+      <p>Browser Anda tidak mendukung video.</p>
+    </video>
+  </body>
+</html>
