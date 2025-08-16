@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menambahkan Audio di HTML</title>
+  </head>
+  <body>
+    <h1>Contoh Menambahkan Audio</h1>
+
+    <!-- Audio sederhana dengan kontrol -->
+    <audio src="musik.mp3" controls></audio>
+
+    <br /><br />
+
+    <!-- Audio dengan beberapa format (untuk kompatibilitas browser) -->
+    <audio controls autoplay loop muted>
+      <source src="musik.mp3" type="audio/mpeg" />
+      <source src="musik.ogg" type="audio/ogg" />
+      <p>Browser Anda tidak mendukung audio.</p>
+    </audio>
+  </body>
+</html>
