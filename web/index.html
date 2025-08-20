@@ -3,36 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Pribadi Saya</title>
+    <title>Web Pribadi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      header {
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: blue;
+        font-weight: bold;
+      }
+      .profile {
+        margin: 20px 0;
+      }
+      .profile img {
+        width: 120px;
+        border-radius: 50%;
+        border: 2px solid #333;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .title {
+        font-style: italic;
+        color: #555;
+      }
+      section {
+        margin: 20px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 20px auto;
+        max-width: 800px;
+      }
+      .box {
+        border: 1px solid #333;
+        padding: 15px;
+        width: 40%;
+        text-align: left;
+      }
+      footer {
+        margin-top: 30px;
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+    </style>
   </head>
   <body>
-    <!-- Bagian Header -->
-    <header
-      style="text-align: center; background-color: #f2f2f2; padding: 20px"
-    >
-      <h1>Selamat Datang di Web Pribadi Saya</h1>
-      <p>
-        Halo, saya <b>Haryanto</b>. Ini adalah project web sederhana menggunakan
-        HTML.
-      </p>
+    <!-- Navigasi -->
+    <header>
+      <nav>
+        <a href="tentang.html">Home</a> | <a href="contact.html">Contact</a> |
+        <a href="">About me</a>
+      </nav>
     </header>
 
-    <!-- Navigasi -->
-    <nav style="text-align: center; background-color: #ddd; padding: 10px">
-      <a href="saya.html">Tentang Saya</a> | <a href="hobi.html">Hobi</a> |
-      <a href="kontak.html">Kontak</a>
-    </nav>
+    <!-- Profil -->
+    <div class="profile">
+      <img src="foto.png" alt="Foto Profil" />
+      <p class="name">Haryanto</p>
+      <p class="title">(Panglima)</p>
+    </div>
+
+    <!-- Overview -->
+    <section>
+      <h2>Overview</h2>
+      <p>Hi, saya adalah web developer. Saat ini sedang belajar HTML.</p>
+    </section>
+
+    <!-- Skill dan Pengalaman -->
+    <div class="container">
+      <div class="box">
+        <h3>Skill</h3>
+        <ul>
+          <li>HTML (Expert)</li>
+          <li>CSS (Beginner)</li>
+          <li>Javascript (Beginner)</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Pengalaman</h3>
+        <ul>
+          <li>Pernah bekerja di ...</li>
+          <li>Menjadi leader di komunitas</li>
+          <li>Kontributor open source</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <footer
-      style="
-        text-align: center;
-        background-color: #333;
-        color: white;
-        padding: 10px;
-      "
-    >
-      <p>&copy; 2025 Web Pribadi Saya | Dibuat dengan ❤️ menggunakan HTML</p>
+    <footer>
+      <p>&copy; 2025 @ Yyan</p>
     </footer>
   </body>
 </html>
